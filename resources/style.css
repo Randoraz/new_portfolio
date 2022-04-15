@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1, h2, h3, p, a, form {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+/* Header Section */
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.4rem;
+}
+
+/* About Me Section */
+#about-me-container {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+#intro {
+    font-size: 2.4rem;
+    padding-left: 3rem;
+    margin: auto;
+    width: 60%;
+    text-align: justify;
+}
+
+#portrait {
+    width: 40%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#portrait-img {
+    margin: 0;
+    width: 50%;
+}
+
+/* Projects Section */
+h3 {
+    font-size: 2.4rem;
+}
+
+.description {
+    text-align: center;
+    font-size: 2rem;
+}
