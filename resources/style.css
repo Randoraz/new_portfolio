@@ -14,14 +14,20 @@ h1, h2, h3, p, a, form {
 
 h1 {
     font-size: 5rem;
+    margin-bottom: 3rem;
 }
 
 h2 {
     font-size: 3rem;
+    margin-bottom: 3rem;
 }
 
 p {
     font-size: 2rem;
+}
+
+section {
+    margin: 7rem 0;
 }
 
 /* Header Section */
@@ -40,22 +46,22 @@ p {
 }
 
 #intro {
-    font-size: 2.4rem;
-    padding-left: 3rem;
+    font-size: 3rem;
+    padding: 0 5rem 0 10rem;
+    width: 50%;
     margin: auto;
-    width: 60%;
     text-align: justify;
 }
 
 #portrait {
-    width: 40%;
     text-align: center;
     font-size: 2rem;
+    width: 60%;
 }
 
 #portrait-img {
     margin: 0;
-    width: 50%;
+    width: 40vw;
 }
 
 /* Projects Section */
@@ -63,7 +69,30 @@ h3 {
     font-size: 2.4rem;
 }
 
+#projects p {
+    text-align: justify;
+}
+
 .description {
     text-align: center;
     font-size: 2rem;
+}
+
+/* Games Section */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    gap: 3rem;
+    padding: 0 3rem;
+    justify-content: center;
+}
+
+.tile {
+    width: 40rem;
+}
+
+img {
+    max-width: 100%;
 }
