@@ -1,3 +1,11 @@
+:root {
+    --main-purple: hsl(280, 25%, 45%);
+    --almost-white-purple: hsl(280, 15%, 85%);
+    --link-blue: hsl(170, 75%, 75%);
+    --main-blue: hsl(170, 75%, 30%);
+    --main-red: hsl(350, 75%, 30%);
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +16,14 @@ html {
     font-size: 62.5%;
 }
 
-h1, h2, h3, p, a, form {
+body {
+    background-color: var(--main-purple);
+    font-family: Ubuntu, sans-serif;
+}
+
+h1, h2, h3, p, figcaption, form {
     text-align: center;
+    color: var(--almost-white-purple);
 }
 
 h1 {
@@ -26,11 +40,21 @@ p {
     font-size: 2rem;
 }
 
+a {
+    text-decoration: none;
+    color: var(--link-blue);
+}
+
 section {
-    margin: 7rem 0;
+    padding: 3.5rem 0;
 }
 
 /* Header Section */
+header {
+    background-color: var(--main-red);
+    padding-bottom: 2.5rem;
+}
+
 #navbar {
     display: flex;
     justify-content: space-around;
@@ -69,6 +93,10 @@ h3 {
     font-size: 2.4rem;
 }
 
+#projects {
+    background-color: var(--main-blue);
+}
+
 #projects p {
     text-align: justify;
 }
@@ -95,4 +123,9 @@ h3 {
 
 img {
     max-width: 100%;
+}
+
+/* Contact Section */
+#contact {
+    background-color: var(--main-blue);
 }
