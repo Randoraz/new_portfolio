@@ -57,6 +57,7 @@ header {
 
 #navbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     font-size: 2.4rem;
@@ -64,15 +65,17 @@ header {
 
 /* About Me Section */
 #about-me-container {
-    display: flex;
+    /*display: flex;*/
+    display: block;
     margin: auto;
     width: 100%;
+    overflow: auto;
 }
 
 #intro {
-    font-size: 3rem;
-    padding: 0 5rem 0 10rem;
-    width: 50%;
+    font-size: 2.4rem;
+    padding: 0 10rem 0 10rem;
+    /*width: 50%;*/
     margin: auto;
     text-align: justify;
 }
@@ -80,12 +83,33 @@ header {
 #portrait {
     text-align: center;
     font-size: 2rem;
-    width: 60%;
+    float: right;
+    margin: auto 10rem 2rem;
+    /*width: 60%;*/
 }
 
 #portrait-img {
     margin: 0;
-    width: 40vw;
+    width: 30vw;
+}
+
+@media only screen and (min-width: 1100px) {
+    #about-me-container {
+        display: flex;
+    }
+
+    #intro {
+        width: 50%;
+        font-size: 3rem;
+        padding: 0 10rem 0 0;
+    }
+    
+    #portrait {
+        float: none;
+        width: 50%;
+        margin: auto;
+    }
+
 }
 
 /* Projects Section */
@@ -129,3 +153,27 @@ img {
 #contact {
     background-color: var(--main-blue);
 }
+
+label {
+    font-size: 1.5rem;
+}
+
+#form-grid {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 3rem);
+    grid-template-columns: 10rem 28.5rem;
+    grid-template-areas: 'label1 input1'
+                        'label2 input2'
+                        'label3 input3';
+    justify-content: center;
+    align-items: center;
+}
+
+#label1 { grid-area: label1; }
+#label2 { grid-area: label2; }
+#label3 { grid-area: label3; }
+#fname { grid-area: input1; }
+#lname { grid-area: input2; }
+#email { grid-area: input3; }
