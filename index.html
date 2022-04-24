@@ -3,6 +3,7 @@
     <head>
         <title>Randoraz Personal Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/096552b4df.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="./resources/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,23 +103,34 @@
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p>Send me an Email</p>
-            <br>
-            <form>
-                <div id="form-grid">
-                    <label for="fname" id="label1">First name:</label>
-                    <input type="text" id="fname" name="fname"/>
-                    <label for="lname" id="label2">Last name:</label>
-                    <input type="text" id="lname" name="lname"/>
-                    <label for="email" id="label3">Email:</label>
-                    <input type="email" id="email" name="email"/>
+            <div id="contact-flex-container">
+                <div id="my-contacts">
+                    <h3>Contact me on</h3>
+                    <div id="icons-div">
+                        <a href="https://github.com/Randoraz" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto: randoraz@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-                <br>
-                <label for="text">Message:</label><br>
-                <textarea id="text" name="text" rows="10" cols="50">Type your message here</textarea>
-                <br><br>
-                <button type="submit">Send</button>
-            </form>
+                <div id="email-area">
+                    <h3>Send me an Email</h3>
+                    <br>
+                    <form>
+                        <div id="form-grid">
+                            <label for="fname" id="label1">First name:</label>
+                            <input type="text" id="fname" name="fname"/>
+                            <label for="lname" id="label2">Last name:</label>
+                            <input type="text" id="lname" name="lname"/>
+                            <label for="email" id="label3">Email:</label>
+                            <input type="email" id="email" name="email"/>
+                        </div>
+                        <br>
+                        <label for="text">Message:</label><br>
+                        <textarea id="text" name="text">Type your message here</textarea>
+                        <br><br>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </body>
     <footer>
