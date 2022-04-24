@@ -129,6 +129,13 @@ header {
     text-align: justify;
 }
 
+.project-tile {
+    width: 40rem;
+    border: 0.5rem solid var(--main-red);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
 .description {
     text-align: center;
     font-size: 2rem;
@@ -145,16 +152,19 @@ header {
     justify-content: center;
 }
 
-.tile {
+.game-tile {
     width: 40rem;
+    border: 0.5rem solid var(--main-red);
+    border-radius: 10px;
 }
 
 #games h3 {
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 img {
     max-width: 100%;
+    border-radius: 10px;
 }
 
 /* Contact Section */
@@ -241,4 +251,18 @@ button:hover {
 button:active {
     border-color: var(--main-purple);
     border-width: 0.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--main-red);
+    height: 10rem;
+    position: relative;
+}
+
+footer > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
