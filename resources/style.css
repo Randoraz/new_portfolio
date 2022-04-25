@@ -53,6 +53,8 @@ section {
     padding: 3.5rem 0;
 }
 
+
+
 /* Header Section */
 header {
     background-color: var(--main-red);
@@ -116,6 +118,8 @@ header {
 
 }
 
+
+
 /* Projects Section */
 #projects {
     background-color: var(--main-blue);
@@ -129,11 +133,16 @@ header {
     text-align: justify;
 }
 
+.project-tile:hover {
+    background-color: var(--main-purple);
+}
+
 .project-tile {
     width: 40rem;
     border: 0.5rem solid var(--main-red);
     border-radius: 10px;
     padding: 2rem;
+    transition: 0.7s;
 }
 
 .description {
@@ -165,6 +174,15 @@ header {
 img {
     max-width: 100%;
     border-radius: 10px;
+}
+
+.invisible {
+    color: var(--main-purple);
+    transition: 1s;
+}
+
+.game-tile:hover .invisible {
+    color: var(--main-red);
 }
 
 /* Contact Section */
