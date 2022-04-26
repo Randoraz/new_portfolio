@@ -14,6 +14,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -69,6 +70,41 @@ header {
     font-size: 2.4rem;
 }
 
+.nav-invisible {
+    color: var(--main-red);
+    transition: 0.7s;
+}
+
+#navbar a:hover .nav-invisible {
+    color: var(--link-blue);
+}
+
+@media only screen and (max-width: 625px) {
+    #navbar {
+        gap: 2rem;
+        padding: 0 10rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    #navbar {
+        padding: 0 5rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #navbar {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
+
 /* About Me Section */
 #about-me-container {
     /*display: flex;*/
@@ -116,6 +152,32 @@ header {
         margin: auto;
     }
 
+}
+
+@media only screen and (max-width: 725px) {
+    #intro {
+        width: 100%;
+        padding: 0 5rem;
+    }
+
+    #portrait {
+        float: none;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+
+    #portrait-img {
+        width: 50vw;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    #intro {
+        padding: 0 3rem;
+        font-size: 2rem;
+    }
 }
 
 
@@ -178,7 +240,7 @@ img {
 
 .invisible {
     color: var(--main-purple);
-    transition: 1s;
+    transition: 0.7s;
 }
 
 .game-tile:hover .invisible {
@@ -197,11 +259,14 @@ img {
 #contact-flex-container {
     display: flex;
     width: 100%;
-    padding: 0 10rem;
-    gap: 25rem;
+    gap: 5rem;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+}
+
+#contact-flex-container > div {
+    margin: 0 10rem;
 }
 
 #icons-div {
