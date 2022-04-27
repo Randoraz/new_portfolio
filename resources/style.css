@@ -197,6 +197,12 @@ header {
 
 #projects p {
     text-align: justify;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+#projects div.flex-container {
+    align-items: flex-start;
 }
 
 .project-tile:hover {
@@ -215,6 +221,34 @@ header {
     text-align: center;
     font-size: 2rem;
 }
+
+#projects button {
+    display: block;
+    margin: 0 auto 2rem;
+    font-size: 2rem;
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    padding: 0.5rem;
+    color: var(--almost-white-purple);
+    background-color: var(--main-purple);
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: var(--almost-white-purple);
+    border-image: none;
+    transition: color 1s, background-color 1s;
+}
+
+#projects button:hover {
+    color: var(--main-purple);
+    background-color: var(--almost-white-purple);
+}
+
+#projects button:active {
+    border-color: var(--main-purple);
+    border-width: 0.2rem;
+}
+
+
 
 /* Games Section */
 .flex-container {
@@ -240,6 +274,12 @@ header {
 img {
     max-width: 100%;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 1376px) and (min-width: 927px) {
+    #games h3.adjust-margin {
+        margin-top: 10rem;
+    }
 }
 
 .invisible {
@@ -316,7 +356,7 @@ textarea {
 #lname { grid-area: input2; }
 #email { grid-area: input3; }
 
-button {
+#contact button {
     font-size: 2.4rem;
     font-family: Ubuntu, sans-serif;
     font-weight: bold;
@@ -330,12 +370,12 @@ button {
     transition: color 1s, background-color 1s;
 }
 
-button:hover {
+#contact button:hover {
     color: var(--main-purple);
     background-color: var(--almost-white-purple);
 }
 
-button:active {
+#contact button:active {
     border-color: var(--main-purple);
     border-width: 0.2rem;
 }
